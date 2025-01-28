@@ -2,9 +2,9 @@ package com.james.hayward.artinstituteofchicago.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.james.hayward.artinstituteofchicago.ui.ArtListViewModel.ArtListViewState.ArtList
 import com.james.hayward.artinstituteofchicago.domain.ArtworkDomainModel
 import com.james.hayward.artinstituteofchicago.domain.ArtworkRepository
+import com.james.hayward.artinstituteofchicago.ui.ArtListViewModel.ArtListViewState.ArtList
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.flow.MutableStateFlow
