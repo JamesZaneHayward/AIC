@@ -17,6 +17,8 @@ retrofitVersion = "2.11.0"
 moshiVersion = '1.15.1'
 composeNavigation = "2.8.5"
 hiltNavigation = "1.2.0"
+junit5Version = '5.11.4'
+mockkVersion = '1.13.7'
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -47,6 +49,10 @@ retrofit-moshi-converter = { group = "com.squareup.retrofit2", name = "converter
 moshi = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiVersion" }
 moshi-adapters = { group = "com.squareup.moshi", name = "moshi-adapters", version.ref = "moshiVersion" }
 moshi-kotlin-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshiVersion" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockkVersion" }
+junit-jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit5Version" }
+junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit5Version" }
+junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junit5Version" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

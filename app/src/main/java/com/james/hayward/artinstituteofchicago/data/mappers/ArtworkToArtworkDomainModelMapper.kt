@@ -11,8 +11,9 @@ class ArtworkToArtworkDomainModelMapper @Inject constructor() :
             return ArtworkDomainModel(
                 id = artwork.id,
                 title = artwork.title,
-                artistDisplay = artwork.artistDisplay ?: "",
+                artistDisplay = artwork.artistDisplay,
                 description = artwork.description,
+                // TODO extract image mapping to its own mapper for reusability and testability
                 imageUrl = "https://www.artic.edu/iiif/2/${artwork.imageId}/full/843,/0/default.jpg",
                 thumbnailUrl = "https://www.artic.edu/iiif/2/${artwork.imageId}/full/100,/0/default.jpg",
             )

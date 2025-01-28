@@ -112,7 +112,9 @@ fun ArtworkListing(
             )
         ) {
             Text(artwork.title)
-            Text(artwork.artistDisplay)
+            artwork.artistDisplay?.let {
+                Text(it)
+            }
         }
     }
     HorizontalDivider(
