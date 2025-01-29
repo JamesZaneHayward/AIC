@@ -3,10 +3,15 @@ Simple app using the Art Institute of Chicago api to display a list of Artworks,
 
 # Tech Used
 Kotlin / Coroutines / StateFlow / Compose
+
 retrofit / okhttp for network
+
 Moshi for json parsing
+
 Coil for async image loading
+
 Hilt for dependency injection
+
 Junit5 / Mockk for unit tests
 
 # Architecture
