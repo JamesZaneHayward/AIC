@@ -23,7 +23,7 @@ class ArtworkRepositoryImpl @Inject constructor(
                     .mapNotNull {
                         try {
                             artworkToArtworkDomainModelMapper.toDomain(it)
-                        } catch (ignored: Exception) {
+                        } catch (_: Exception) {
                             // if mapping fails, drop the entry
                             // TODO add logging to notify which entries are failing and why
                             null
